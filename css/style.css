@@ -122,21 +122,31 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 11; }
 
 .navig li {
-  display: inline-block;
-  color: #fff;
-  font-family: Montserrat_my;
-  font-size: 18.5px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin: 31px 0 0 65px; }
-  @media (max-width: 1182px) {
-    .navig li {
-      font-size: 15px;
-      margin: 31px 0 0 50px; } }
-  @media (max-width: 992.98px) {
-    .navig li {
-      font-size: 12px;
-      margin: 31px 0 0 30px; } }
+  display: inline-block; }
+  .navig li a {
+    color: #fff;
+    font-family: Montserrat_my;
+    font-size: 18.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 31px 0 0 65px; }
+    @media (max-width: 1182px) {
+      .navig li a {
+        font-size: 15px;
+        margin: 31px 0 0 50px; } }
+    @media (max-width: 992.98px) {
+      .navig li a {
+        font-size: 12px;
+        margin: 31px 0 0 30px; } }
+    .navig li a:active {
+      -webkit-transform: translate(2px, 5px);
+      -ms-transform: translate(2px, 5px);
+      transform: translate(2px, 5px);
+      cursor: pointer;
+      color: yellow; }
+    .navig li a:hover {
+      cursor: pointer;
+      color: yellow; }
 
 /*==== burger menu ====*/
 .header_menu__icon {
@@ -318,6 +328,17 @@ footer {
   margin: 60px 0 0 76px; }
   .pages li, .service li {
     margin: 0 0 30px 0; }
+    .pages li a, .service li a {
+      color: #ffffff; }
+      .pages li a:active, .service li a:active {
+        -webkit-transform: translate(2px, 5px);
+        -ms-transform: translate(2px, 5px);
+        transform: translate(2px, 5px);
+        cursor: pointer;
+        color: yellow; }
+      .pages li a:hover, .service li a:hover {
+        cursor: pointer;
+        color: yellow; }
   .pages li:first-child, .service li:first-child {
     font-family: Montserrat;
     font-weight: bold;
@@ -467,6 +488,10 @@ footer {
   @media (max-width: 767.98px) {
     .main_screen_button, .creative-button, .form-button {
       margin-top: 22px; } }
+  .main_screen_button:active, .creative-button:active, .form-button:active {
+    -webkit-transform: translate(2px, 5px);
+    -ms-transform: translate(2px, 5px);
+    transform: translate(2px, 5px); }
 
 .part_one {
   width: 100%;
@@ -622,6 +647,10 @@ footer {
   letter-spacing: -1.11px;
   text-align: center;
   color: #000000; }
+  .we_design-button:active, .rev-button:active {
+    -webkit-transform: translate(2px, 5px);
+    -ms-transform: translate(2px, 5px);
+    transform: translate(2px, 5px); }
 
 .creative {
   height: 1303px;
