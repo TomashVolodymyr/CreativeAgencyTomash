@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,900&family=Montserrat+Subrayada:wght@700&family=Montserrat:ital,wght@0,900;1,900&display=swap");
+@import "swiper-bundle.min.css" screen;
 @font-face {
   font-family: 'Montserrat_my';
   src: url("../fonts/Montserrat-Regular.eot");
@@ -562,8 +563,8 @@ footer {
       top: 330px; } }
   @media (max-width: 767.98px) {
     .we_design-circles {
-      display: block;
-      top: 350px; } }
+      display: none;
+      top: 0; } }
 
 .we_design_circle-img {
   margin: 0 auto;
@@ -629,8 +630,15 @@ footer {
       height: 382px; } }
   @media (max-width: 767.98px) {
     .part_two {
-      height: 100%;
-      padding: 1150px 0 20px 0; } }
+      height: auto;
+      padding: 0 10% 50px 10%; } }
+
+@media (min-width: 767.98px) {
+  .we_design-circles-swiper {
+    display: none; } }
+
+.we_design-circles-swiper {
+  padding: 50px 0; }
 
 .we_design-button, .rev-button {
   display: block;
@@ -755,7 +763,14 @@ footer {
   margin: 70px 0 0 0; }
   @media (max-width: 767.98px) {
     .rev-users {
-      display: block; } }
+      display: none; } }
+
+@media (min-width: 767.98px) {
+  .rev-users-swiper {
+    display: none; } }
+
+.rev-users-swiper {
+  margin: 30px 0 0 0; }
 
 .rev-users_item {
   width: 367px;
